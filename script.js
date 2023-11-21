@@ -1,15 +1,14 @@
-/*function capitalize(){
-  const name = document.querySeletor("#name").value;
-  const capitalized = name.charAt(0).toUpperCase()+name.slice(1);
+function countvowels(){
+  let name= docuent.querySelctor("#name").value;
+  const vowles = aeiouAEIOU;
 
-document.querySelector("span").innerHTML=capitalized;
+let count =0;
+   for (let i=0; i<name.length; i++){
+count++;
+   }
 }
-*/
-function capitalize() {
-  //   alert("hello");
-  const name = document.querySelector("#name").value;
-  const capitalized = name.charAt(0).toUpperCase() + name.slice(1);
 
-  //   alert(capitalized);
-  document.querySelector("span").innerHTML = capitalized;
+alert(`the name $ {name} includes $ {count}vowels`);
+
+document.querySeklector("#result").innerHTML=count;
 }
