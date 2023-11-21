@@ -1,25 +1,15 @@
-funcation caculator() {
-let num1 =parseInt(document.getElementById("num1").value);
-let num2 =parseInt(document.getElementById("num2").value);
-let oprator= document..getElementById("oprator")..value);
+function highestmarks() {
+  const one = document.querySelector("#stdone").value;
+  const two = document.querySelector("#stdtwo").value;
+  const three = document.querySelector("#stdthree").value;
+  const four = document.querySelector("#stdfour").value;
+  const five = document.querySelector("#stdfive").value;
 
-let  result;
-  case "+":
-  result = num1+ num2;
-  break;
-  case "-":
-  result = num1-num2;
-  break;
-  case "*":
-  result= num1*num2;
-  break;
-  case "/":
-  result= num1 / num2;
-  break;
-   defualt:
-   result = "invalid oprator  "
-  break;
-}
+  let marks = [one, two, three, four, five];
+  const highestMarks = Math.max(...marks);
+  let student = marks.indexOf(highestMarks) + 1;
 
-document.getElementById("result").value= result;
+  alert(` The  Highest Mark is: ${highestMarks}`);
+
+  document.querySelector("#result").innerHTML = highestMarks;
 }
