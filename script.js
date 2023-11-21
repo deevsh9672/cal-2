@@ -1,28 +1,13 @@
-/*function countvowels(){
-  let name= docuent.querySelctor("#name").value;
-  const vowles = aeiouAEIOU;
+function find()
+{
+  const item1 = document.querySelector("#item1").value;
+  const item2 = document.querySelector("#item2").value;
+  const item3 = document.querySelector("#item3").value;
+  const item4= document.querySelector("#item4").value;
+  const item5 =document.querySelector("#item5").value;
 
-let count =0;
-   for (let i=0; i<name.length; i++){
-count++;
-   }
-}
+const originalCart = [item1,item2,item3,item4,item5];
 
-alert(`the name $ {name} includes $ {count}vowels`);
-
-document.querySeklector("#result").innerHTML=count;
-}
-*/
-
-function countVowels() {
-  let name = document.querySelector("#name").value;
-  const vowels = "aeiouAEIOU";
-  let count = 0;
-  for (let i = 0; i < name.length; i++) {
-    if (vowels.includes(name[i])) {
-      count++;
-    }
-  }
-  alert(`The Name ${name} includes ${count} vowels`);
-  document.querySelector("#result").innerHTML = count;
+const newCart=[...new set(originalCart)];
+document.querySelecotr(".output").innerHTML=newCart;
 }
